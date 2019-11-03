@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:learn_flutter/my_scaffold.dart';
+import 'package:learn_flutter/tutorial_home.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(new MaterialApp(
+  title: 'Tutorial Title',
+  home: new TutorialHome(),
+));
 
 class MyApp extends StatelessWidget {
   @override
