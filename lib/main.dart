@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:learn_flutter/my_scaffold.dart';
 
 void main() => runApp(new MyApp());
 
@@ -8,7 +9,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Welcome to Flutter',
-      home: new RandomWords(),
+      // home: new RandomWords(),
+      home: new MyScaffold(),
       theme: new ThemeData(primaryColor: Colors.orange),
     );
   }
