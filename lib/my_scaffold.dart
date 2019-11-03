@@ -45,8 +45,32 @@ class MyScaffold extends StatelessWidget {
             child: new Center(
               child: new Text('Hello world'),
             ),
-          )
+          ),
+          new GestureButton()
         ],
+      ),
+    );
+  }
+}
+
+class GestureButton extends StatelessWidget {
+  @override 
+  Widget build(BuildContext context) {
+    return new GestureDetector(
+      onTap: (){
+        print('I click this button');
+      },
+      child: new Container(
+        height: 50,
+        padding: const EdgeInsets.all(8.0),
+        margin: const EdgeInsets.symmetric(horizontal: 8.0),
+        decoration: new BoxDecoration(
+          borderRadius: new BorderRadius.circular(5.0),
+          color: Colors.lightGreen[500],
+        ),
+        child: new Center(
+          child: new Text('Engage'),
+        ),
       ),
     );
   }
