@@ -6,8 +6,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      home: Container(
-        child: Text('hello'),
+      title: 'Flutter Demo',
+      home: Scaffold(
+        appBar: AppBar(title: Text('app bar'),),
+        body: Center(
+          child: Container(child: Text('scaffold body'),),
+        ),
+      ),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.white,
+        splashColor: Colors.transparent,
+        tooltipTheme: TooltipThemeData(verticalOffset: -100000)
       ),
     );
   }
