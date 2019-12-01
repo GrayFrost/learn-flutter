@@ -24,7 +24,12 @@ class IconDemo extends StatelessWidget {
               onPressed: (){
                 print('按下2');
               },
-              child: Text('raise button'),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.watch, color: Colors.cyan,),
+                  Text('raise me')
+                ],
+              ),
             )
           ],
         ),
