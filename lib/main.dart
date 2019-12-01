@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/4_1_container/container.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyContainer());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Hello World',
       home: Scaffold(
-        appBar: AppBar(title: Text('app bar'),),
-        body: Center(
-          child: Container(child: Text('scaffold body'),),
+        appBar: AppBar(
+          title: Text('Hello World'),
         ),
-      ),
-      theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: Colors.white,
-        splashColor: Colors.transparent,
-        tooltipTheme: TooltipThemeData(verticalOffset: -100000)
+        body: Center(
+          child: Text('body'),
+        ),
       ),
     );
   }

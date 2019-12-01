@@ -21,3 +21,20 @@ aaaa
 ```
 
 Boolean的值只有true和false，不能像js那样使用是否是空字符串来作为判断条件。
+
+3. 函数
+可选参数。
+和ts中的可选不同
+``` typescript
+getUserInfo(name, sex?){} // typescript 写法
+```
+``` dart
+String getUserInfo(String name, [String sex]){}
+```
+dart中更像是我们平时看文档的那种可选
+
+main函数
+有个主入口
+``` dart
+void main() {}
+```
