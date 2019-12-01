@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/4_1_container/container.dart';
+import 'package:learn_flutter/4_2_image/image.dart';
 
-void main() => runApp(MyContainer());
+void main() => runApp(ImageDemo());
 
 class MyApp extends StatelessWidget {
   @override
