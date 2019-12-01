@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/4_5_listview/listview_3.dart';
+import 'package:learn_flutter/4_5_listview/gridview.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context){
     return MaterialApp(
       title: 'Hello World',
-      home: ListViewDemo3()
+      home: GridViewDemo()
     );
   }
 }
