@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/4_2_image/image.dart';
+import 'package:learn_flutter/4_3_text/text.dart';
 
-void main() => runApp(ImageDemo());
+void main() => runApp(TextDemo());
 
 class MyApp extends StatelessWidget {
   @override
